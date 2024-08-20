@@ -19,15 +19,8 @@ app.get('/',(req,res)=>{
 
 app.use("/api/user",userRouter);
 app.use(authenticate);
-app.get('/api/auth',(req,res)=>{
-    res.send("following routes  can accessable only by authenticated users, Thank You");
-})
 app.use("/api",postRouter);
 app.use("/api/posts",commentRouter);
-
-
-
-
 
 const PORT=process.env.PORT || 4561;
 app.listen(PORT,async()=>{
