@@ -282,3 +282,10 @@ The goal of this project is to design and implement a set of API endpoints for a
     }
   ]  
     ``` 
+### Rate limit :
+* If an user try to hit the post comment and reply to existing comments  apis morethan 5 times in a minute it will  show the follwoing response :
+   `Too many comment from this IP address, please try again later !`    
+
+
+## Conclusion :
+ The project is properly ***dockerized*** and deployed to `Render`, which provides a free hosting service.
